@@ -9,6 +9,14 @@
 </head>
 
 <body onload="clear_all()">
+    <video id="background-video" autoplay muted playsinline>
+        <source src="media/background_video.mov" type="video/mp4">
+    </video>    
+    <video id="background-video-reverse" muted playsinline style="display: none;">
+        <source src="media/background_video_reverse.mov" type="video/mp4">
+    </video>
+    
+
     <div class = "wrapper">
         <div id = "main-data">
             <img class = "headshot" src="images/headshot.jpg" alt="Profile Headshot">
@@ -146,5 +154,24 @@
 
     }
 </script>
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const forwardVideo = document.getElementById('background-video');
+        const reversedVideo = document.getElementById('background-video-reverse');
+
+        forwardVideo.addEventListener('ended', () => {
+            forwardVideo.style.display = 'none';
+            reversedVideo.style.display = 'block';
+            reversedVideo.play();
+        });
+
+        reversedVideo.addEventListener('ended', () => {
+            reversedVideo.style.display = 'none';
+            forwardVideo.style.display = 'block';
+            forwardVideo.play();
+        });
+    });
+</script>
+
 </body>
 </html>
