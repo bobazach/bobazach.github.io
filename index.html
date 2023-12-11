@@ -9,19 +9,15 @@
 </head>
 
 <body onload="clear_all()">
-    <video id="background-video" autoplay muted playsinline>
-        <source src="media/background_video.mov" type="video/mp4">
-    </video>    
-    <video id="background-video-reverse" muted playsinline style="display: none;">
-        <source src="media/background_video_reverse.mov" type="video/mp4">
+    <video id="background-video" autoplay muted playsinline loop>
+        <source src="media/background.mp4" type="video/mp4">
     </video>
-    
 
     <div class = "wrapper">
         <div id = "main-data">
             <img class = "headshot" src="images/headshot.jpg" alt="Profile Headshot">
             <div id="head">
-                <span class = "my-name"><a href="https://zachcheng.github.io">Zachary Cheng</a></span>
+                <span class = "my-name"><a href="https://bobazach.github.io">Zachary Cheng</a></span>
             </div>
             <span class = "header-text">Computer Science + Data Science @ Emory University</span>
 
@@ -39,7 +35,7 @@
             <div id = "social-media">
                 <ul class = "text">
                     <li>
-                        <a href = "https://github.com/zachcheng"><i class="fab fa-github"></i></a>
+                        <a href = "https://github.com/bobazach"><i class="fab fa-github"></i></a>
                     </li>
                     <li>
                         <a href = "https://www.linkedin.com/in/zachcheng/"><i class="fab fa-linkedin-in"></i></a>
@@ -52,9 +48,26 @@
         </div>
 
         <div class = "side-data" id = "Projects">
+            <br>
+            <div id = "key-take">
+                <div class ="side-head">
+                    <span class = "side-name"><a href="https://github.com/bobazach/KeyTake">KeyTake - AI Group Chat Assistant</a></span> | 2023
+                    <div>
+                        <span class = "header-text">Python, Flask, MongoDB, OpenAI API</span>
+                    </div>
+                </div>
+
+                <div class = "side-bio-data">
+                    <ul class = "text">
+                        <li><a>Full stack web application intgrating GroupMe and OpenAI APIs</a></li>
+                        <li><a>Summarizes messages and highlights action items with a 90% accurate model</a></li>
+                    </ul>
+                </div>
+            </div>
+            <br>
             <div id = "spotify-project">
                 <div class ="side-head">
-                    <span class = "side-name"><a href="https://github.com/bobazach/KeyTake">Spotify Trends and Notes</a></span> | 2023
+                    <span class = "side-name"><a href="https://github.com/bobazach/top-spotify-songs-and-notes">Spotify Trends and Notes</a></span> | 2023
                     <div>
                         <span class = "header-text">JavaScript, HTML, CSS, Node.js, Spotify API</span>
                     </div>
@@ -69,25 +82,9 @@
                 </div>
             </div>
             <br>
-            <div id = "key-take">
-                <div class ="side-head">
-                    <span class = "side-name"><a href="https://github.com/bobazach/KeyTake">KeyTake - AI Group Chat Assistant</a></span> | 2023
-                    <div>
-                        <span class = "header-text">Python, Flask, MongoDB, OpenAI API</span>
-                    </div>
-                </div>
-
-                <div class = "side-bio-data">
-                    <ul class = "text">
-                        <li><a>Full stack web application intgrating GroupME and OpenAI APIs</a></li>
-                        <li><a>Summarizes messages and highlights action items with a 90% accurate model</a></li>
-                    </ul>
-                </div>
-            </div>
-            <br>
             <div id = "grad-u">
                 <div class ="side-head">
-                    <span class = "side-name"><a href="https://github.com/bobazach/KeyTake">GradU - Online Graduate School Resource Forum</a></span> | 2022
+                    <span class = "side-name"><a href="https://github.com/bobazach/GradU">GradU - Online Graduate School Resource Forum</a></span> | 2022
                     <div>
                         <span class = "header-text">Google Cloud Platform, React.js, Node.js, Flask, Python, PostgreSQL</span>
                     </div>
@@ -101,9 +98,25 @@
                 </div>
             </div>
             <br>
+            <div id = "led-matrix">
+                <div class ="side-head">
+                    <span class = "side-name"><a href="https://github.com/bobazach/led-matrix-display">LED Matrix Text Displayer</a></span> | 2022
+                    <div>
+                        <span class = "header-text">C, C++, Arduino</span>
+                    </div>
+                </div>
+
+                <div class = "side-bio-data">
+                    <ul class = "text">
+                        <li><a>Statically or dynamically display custom text on an 8x8 LED Matrix</a></li>
+                        <li><a>Improved runtime by 15x using low-level AVR port manipulation vs library methods</a></li>
+                    </ul>
+                </div>
+            </div>
+            <br>
             <div id = "search-bar">
                 <div class ="side-head">
-                    <span class = "side-name"><a href="https://github.com/bobazach/KeyTake">Search Bar with Autocomplete Search Suggestions</a></span> | 2021
+                    <span class = "side-name"><a href="https://github.com/bobazach/autocomplete-trie-search-bar">Autocomplete Search Bar</a></span> | 2021
                     <div>
                         <span class = "header-text">Java</span>
                     </div>
@@ -116,9 +129,9 @@
                 </div>
             </div>
             <br>
-            <div id = "blackjack">
+            <!-- <div id = "blackjack">
                 <div class ="side-head">
-                    <span class = "side-name"><a href="https://github.com/bobazach/KeyTake">Blackjack</a></span> | 2021
+                    <span class = "side-name"><a href="https://github.com/bobazach/blackjack-java"> BlackJack </a></span> | 2021
                     <div>
                         <span class = "header-text">Java</span>
                     </div>
@@ -126,16 +139,17 @@
 
                 <div class = "side-bio-data">
                     <ul class = "text">
-                        <li><a>Simulate a game of Blackjack with a simple JOptionPane GUI</a></li>
+                        <li><a>Simulate a game of Blackjack with a simple JOptionPane GUI!</a></li>
                     </ul>
                 </div>
             </div>
+            <br> -->
         </div>
 
         <div class = "side-data" id="Experience">
             <div id = "oracle-cerner">
                 <div class ="side-head">
-                    <span class = "side-name"><a href="https://cerner.com">Oracle Cerner (formerly Cerner Coperation)</a></span>
+                    <span class = "side-name"><a href="https://cerner.com">Oracle Cerner (formerly Cerner Coperation)</a></span> |
                     <span class = "header-text">SWE Intern</span> |
                     <span class = "header-text">June 2022 - August 2022</span>
                 </div>
@@ -144,14 +158,14 @@
                     <ul class = "text">
                         <li><a>Developed RESTful API web services with Ruby on Rails and React.js</a></li>
                         <li><a>Wrote and tested functionality tests with RSpec and Jenkins</a></li>
-                        <li><a>Uplifted and monitored features for 5 other projects</a></li>
+                        <li><a>Uplifted and maintained features for 5 other projects</a></li>
                     </ul>
                 </div>
             </div>
             <br>
             <div id = "t-mobile">
                 <div class ="side-head">
-                    <span class = "side-name"><a href="https://t-mobile.com">T-Mobile</a></span>
+                    <span class = "side-name"><a href="https://t-mobile.com">T-Mobile</a></span> |
                     <span class = "header-text">Business Analyst Intern</span> |
                     <span class = "header-text">May 2023 - Aug 2023</span>
                 </div>
@@ -169,16 +183,16 @@
         <div class = "side-data" id="Research">
             <div id = "qtm-research-assistant">
                 <div class ="side-head">
-                    <span class = "side-name"><a href="https://www.juanestrada.info/publication/2023-congress-data/">Legislative Activity Database</a></span>
+                    <span class = "side-name"><a href="https://www.juanestrada.info/publication/2023-congress-data/">Legislative Activity Database</a></span> |
                     <span class = "header-text">Research Assistant</span> |
                     <span class = "header-text">August 2023 - Present</span>
                 </div>
 
                 <div class = "side-bio-data">
                     <ul class = "text">
-                        <li><a>Fetched data points from APIs using AWS Lambda</a></li>
-                        <li><a>Researched optimal database schemas and normalization techniques</a></li>
+                        <li><a>Fetched legislative data from APIs using AWS Lambda</a></li>
                         <li><a>Extracted key information from raw text using NLP analysis techniques</a></li>
+                        <li><a>Researched optimal database schemas and normalization techniques</a></li>
                         <li><a>Advised by Dr. Juan Estrada</a></li>
                     </ul>
                 </div>
@@ -188,20 +202,65 @@
         <div class = "side-data" id = "Education">
             <div id = "emory-university">
                 <div class ="side-head">
-                    <span class = "side-name"><a href="https://www.emory.edu">Emory University</a></span> |
-                    <span class = "header-text">Computer Science and Data Science</span> |
-                    <span class = "header-text">c/o 2025</span>
+                    <span class = "side-name"><a href="https://www.emory.edu">Emory University</a></span>
+                    <!-- <span class = "header-text">Computer Science and Data Science</span> |
+                    <span class = "header-text">c/o 2025</span> -->
                 </div>
 
                 <div class = "side-bio-data">
                     <ul class = "text">
                         <li><a>GPA: 3.93</a></li>
-                        <li><a>Emory Entrepreneruship and Venture Management - Technology Analyst</a></li>
-                        <li><a>Project V Solutions Consulting - Analyst > Project Lead > Secretary</a></li>
-                        <li><a>Undergraduate TA - QTM 151 (Intro to Statistical Computing II), ISOM 355 (eCommerce)</a></li>
-                        <li><a>Asian Student Organization</a></li>
-                        <li><a>Kappa Sigma Fraternity</a></li>
-                        <li><a>Club Baseball</a></li>
+                        <li><a></a>Computer Science and Data Science</li>
+                        <li><a>Junior c/o 2025</a></li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <div id = "eevm">
+                <div class ="side-head">
+                    <span class = "side-name"><a href="https://www.eevm.org/">Emory Entrepreneruship and Venture Management</a></span>
+                </div>
+
+                <div class = "side-bio-data">
+                    <ul class = "text">
+                        <li><a>Technology Analyst</a></li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <div id = "pvsc">
+                <div class ="side-head">
+                    <span class = "side-name"><a href="https://www.projectvsolutions.org/">Project V Solutions Consulting</a></span>
+                </div>
+
+                <div class = "side-bio-data">
+                    <ul class = "text">
+                        <li><a>Analyst > Project Lead > Secretary</a></li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <div id = "undergraduate-ta">
+                <div class ="side-head">
+                    <span class = "side-name"><a href="https://www.emory.edu">Undergraduate TA</a></span>
+                </div>
+
+                <div class = "side-bio-data">
+                    <ul class = "text">
+                        <li><a>QTM 151 - Introduction to Statistical Computing II</a></li>
+                        <li><a>ISOM 355 - Appcology: New Commerce Infrastructure</a></li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <div id = "club-baseball">
+                <div class ="side-head">
+                    <span class = "side-name"><a href="https://div2.clubbaseball.org/league/team/?team=2d0c3635-e742-420a-a135-75cc61b7679f&season=4cf13048-4b11-4f93-bf29-014ac0087e06#team-main">Club Baseball</a></span>
+                </div>
+
+                <div class = "side-bio-data">
+                    <ul class = "text">
+                        <li><a>Pitcher, Second Baseman, Righty</a></li>
                     </ul>
                 </div>
             </div>
