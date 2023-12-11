@@ -80,23 +80,24 @@ li {
     text-rendering: optimizeLegibility;
 }
 
+#social-media .text a i {
+    font-size: 30px;
+}
+
 .header-text:hover {
     color: lightcoral;
     transition: all ease 500ms;
 }
 
-.headshot{
-    /* Set a maximum width for the image, adjust as needed */
-    max-width: 300px; /* Adjust this value as needed */
-    /* Ensure the image is responsive */
+.headshot {
+    max-width: 300px;
     width: 100%;
-    /* Set the height auto to maintain aspect ratio */
     height: auto;
-    /* Remove border */
     border: none;
-    /* Add a margin at the bottom for spacing */
     margin-bottom: 10px;
+    border-radius: 50%;
 }
+
 
 #head .my-name{
     /* Fallback: Set a background color. */

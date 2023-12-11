@@ -21,17 +21,18 @@
         <div id = "main-data">
             <img class = "headshot" src="images/headshot.jpg" alt="Profile Headshot">
             <div id="head">
-                <span class = "my-name"><a href="https://zachcheng.github.io">Zachary Cheng</a></span> |
-                <span class = "header-text">Computer Science + Data Science @ Emory University</span>
+                <span class = "my-name"><a href="https://zachcheng.github.io">Zachary Cheng</a></span>
             </div>
+            <span class = "header-text">Computer Science + Data Science @ Emory University</span>
+
 
             <div id = "bio-data">
                 <ul class = "text">
-                    <li><a onclick=toggle(this.text)>projects</a></li>
-                    <li><a onclick=toggle(this.text)>experience</a></li>
-                    <li><a onclick=toggle(this.text)>research</a></li>
-                    <li><a onclick="toggle(this.text)">education</a></li>
-                    <li><a href="documents/resume.pdf">résumé</a></li>
+                    <li><a onclick=toggle(this.text)>Projects</a></li>
+                    <li><a onclick=toggle(this.text)>Experience</a></li>
+                    <li><a onclick=toggle(this.text)>Research</a></li>
+                    <li><a onclick="toggle(this.text)">Education</a></li>
+                    <li><a href="documents/resume.pdf">Résumé</a></li>
                 </ul>
             </div>
 
@@ -50,90 +51,161 @@
             </div>
         </div>
 
-        <div class = "side-data" id = "education">
-            <div id = "emory-university">
+        <div class = "side-data" id = "Projects">
+            <div id = "spotify-project">
                 <div class ="side-head">
-                    <span class = "side-name"><a href="https://www.emory.edu">Emory University</a></span> |
-                    <span class = "header-text">undergraduate</span> |
-                    <span class = "header-text">computer science and data science</span> |
-                    <span class = "header-text">2023</span>
+                    <span class = "side-name"><a href="https://github.com/bobazach/KeyTake">Spotify Trends and Notes</a></span> | 2023
+                    <div>
+                        <span class = "header-text">JavaScript, HTML, CSS, Node.js, Spotify API</span>
+                    </div>
                 </div>
 
                 <div class = "side-bio-data">
                     <ul class = "text">
-                        <li><a>atlanta / georgia</a></li>
-                        <li><a>gpa / 3.93</a></li>
+                        <li><a>View your Spotify listening trends anytime</a></li>
+                        <li><a>Add personalized notes to any song and share notes alongside playlists with friends</a></li>
+                        <li><a>OAuth integration with Spotify for a secure and seamless login experience</a></li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <div id = "key-take">
+                <div class ="side-head">
+                    <span class = "side-name"><a href="https://github.com/bobazach/KeyTake">KeyTake - AI Group Chat Assistant</a></span> | 2023
+                    <div>
+                        <span class = "header-text">Python, Flask, MongoDB, OpenAI API</span>
+                    </div>
+                </div>
+
+                <div class = "side-bio-data">
+                    <ul class = "text">
+                        <li><a>Full stack web application intgrating GroupME and OpenAI APIs</a></li>
+                        <li><a>Summarizes messages and highlights action items with a 90% accurate model</a></li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <div id = "grad-u">
+                <div class ="side-head">
+                    <span class = "side-name"><a href="https://github.com/bobazach/KeyTake">GradU - Online Graduate School Resource Forum</a></span> | 2022
+                    <div>
+                        <span class = "header-text">Google Cloud Platform, React.js, Node.js, Flask, Python, PostgreSQL</span>
+                    </div>
+                </div>
+
+                <div class = "side-bio-data">
+                    <ul class = "text">
+                        <li><a>Full stack web application to share, search, and save application materials</a></li>
+                        <li><a>Create customizable profiles and securely login with Flask</a></li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <div id = "search-bar">
+                <div class ="side-head">
+                    <span class = "side-name"><a href="https://github.com/bobazach/KeyTake">Search Bar with Autocomplete Search Suggestions</a></span> | 2021
+                    <div>
+                        <span class = "header-text">Java</span>
+                    </div>
+                </div>
+
+                <div class = "side-bio-data">
+                    <ul class = "text">
+                        <li><a>Autocomplete search bar implementation using Trie data structure and BFS algorithm</a></li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <div id = "blackjack">
+                <div class ="side-head">
+                    <span class = "side-name"><a href="https://github.com/bobazach/KeyTake">Blackjack</a></span> | 2021
+                    <div>
+                        <span class = "header-text">Java</span>
+                    </div>
+                </div>
+
+                <div class = "side-bio-data">
+                    <ul class = "text">
+                        <li><a>Simulate a game of Blackjack with a simple JOptionPane GUI</a></li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <div class = "side-data" id="experience">
+        <div class = "side-data" id="Experience">
             <div id = "oracle-cerner">
                 <div class ="side-head">
-                    <span class = "side-name"><a href="https://cerner.com">Oracle Cerner (formerly Cerner Coperation)</a></span> |
+                    <span class = "side-name"><a href="https://cerner.com">Oracle Cerner (formerly Cerner Coperation)</a></span>
                     <span class = "header-text">SWE Intern</span> |
+                    <span class = "header-text">June 2022 - August 2022</span>
                 </div>
 
                 <div class = "side-bio-data">
                     <ul class = "text">
-                        <li><a>developed RESTful API web services with Ruby on Rails + React.js</a></li>
-                        <li><a>June 2022 - August 2022</a></li>
+                        <li><a>Developed RESTful API web services with Ruby on Rails and React.js</a></li>
+                        <li><a>Wrote and tested functionality tests with RSpec and Jenkins</a></li>
+                        <li><a>Uplifted and monitored features for 5 other projects</a></li>
                     </ul>
                 </div>
             </div>
             <br>
             <div id = "t-mobile">
                 <div class ="side-head">
-                    <span class = "side-name"><a href="https://t-mobile.com">T-Mobile</a></span> |
+                    <span class = "side-name"><a href="https://t-mobile.com">T-Mobile</a></span>
                     <span class = "header-text">Business Analyst Intern</span> |
-                    <span class = "header-text">Radio Access Network (RAN) Service Assurance Team</span>
+                    <span class = "header-text">May 2023 - Aug 2023</span>
                 </div>
 
                 <div class = "side-bio-data">
                     <ul class = "text">
-                        <li><a>led a region-wide vehicle consolidation initiative to save $1.2M in recovered capital</a></li>
-                        <li><a>May 2023 - Aug 2023</a></li>
+                        <li><a>Led a region-wide initiative to save $1.2M in recovered capital</a></li>
+                        <li><a>Enforced compliance metrics across 23 markets, achieveing a 99% compliance rate</a></li>
+                        <li><a>Developed automated Power BI dashboards with SQL Server and Power Automate</a></li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <div class = "side-data" id="research">
+        <div class = "side-data" id="Research">
             <div id = "qtm-research-assistant">
                 <div class ="side-head">
-                    <span class = "side-name"><a href="https://www.juanestrada.info/publication/2023-congress-data/">Legislative Activity Database</a></span> |
+                    <span class = "side-name"><a href="https://www.juanestrada.info/publication/2023-congress-data/">Legislative Activity Database</a></span>
                     <span class = "header-text">Research Assistant</span> |
-                    <span class = "header-text">Emory University</span>
+                    <span class = "header-text">August 2023 - Present</span>
                 </div>
 
                 <div class = "side-bio-data">
                     <ul class = "text">
-                        <li><a>Fetched, processed, and creates tables of data to be used in a legislative activity database</a></li>
+                        <li><a>Fetched data points from APIs using AWS Lambda</a></li>
+                        <li><a>Researched optimal database schemas and normalization techniques</a></li>
+                        <li><a>Extracted key information from raw text using NLP analysis techniques</a></li>
                         <li><a>Advised by Dr. Juan Estrada</a></li>
-                        <li><a>Aug 2023 - Present</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class = "side-data" id = "projects">
-            <div id = "key-take">
-                <div class ="side-head">
-                    <span class = "side-name"><a href="https://github.com/bobazach/KeyTake">KeyTake - AI Group Chat Assistant</a></span> |
-                    <span class = "header-text">Python</span> |
-                    <span class = "header-text">OpenAI</span> |
-                    <span class = "header-text">MongoDB</span> |
-                    <span class = "header-text">2023</span>
-                </div>
-                <div class = "side-bio-data">
-                    <ul class = "text">
-                        <li><a>full stack web application that integrates with GroupMe and OpenAI APIs</a></li>
-                        <li><a>summarizes messages and highlights action items with a 90% accurate text classifier model</a></li>
                     </ul>
                 </div>
             </div>
         </div>
 
+        <div class = "side-data" id = "Education">
+            <div id = "emory-university">
+                <div class ="side-head">
+                    <span class = "side-name"><a href="https://www.emory.edu">Emory University</a></span> |
+                    <span class = "header-text">Computer Science and Data Science</span> |
+                    <span class = "header-text">c/o 2025</span>
+                </div>
+
+                <div class = "side-bio-data">
+                    <ul class = "text">
+                        <li><a>GPA: 3.93</a></li>
+                        <li><a>Emory Entrepreneruship and Venture Management - Technology Analyst</a></li>
+                        <li><a>Project V Solutions Consulting - Analyst > Project Lead > Secretary</a></li>
+                        <li><a>Undergraduate TA - QTM 151 (Intro to Statistical Computing II), ISOM 355 (eCommerce)</a></li>
+                        <li><a>Asian Student Organization</a></li>
+                        <li><a>Kappa Sigma Fraternity</a></li>
+                        <li><a>Club Baseball</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 
 <script>
