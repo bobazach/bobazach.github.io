@@ -138,7 +138,3 @@ li {
     transform-origin: right;
     transition: all ease 500ms;
 }
-
-#education {
-    display: none;
-}
