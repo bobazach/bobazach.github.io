@@ -9,9 +9,18 @@
 </head>
 
 <body onload="clear_all()">
-    <video id="background-video" autoplay muted playsinline loop>
+    <!-- <video id="background-video" autoplay muted playsinline loop>
         <source src="media/background.mp4" type="video/mp4">
-    </video>
+    </video> -->
+
+    <!-- new particles background -->
+    <div id="particles-js"></div>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'assets/particles.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
 
     <div class = "wrapper">
         <div id = "main-data">
