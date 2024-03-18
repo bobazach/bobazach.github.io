@@ -9,11 +9,6 @@
 </head>
 
 <body onload="clear_all()">
-    <!-- <video id="background-video" autoplay muted playsinline loop>
-        <source src="media/background.mp4" type="video/mp4">
-    </video> -->
-
-    <!-- new particles background -->
     <div id="particles-js"></div>
     <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
     <script>
@@ -285,24 +280,5 @@
 
     }
 </script>
-<script>
-    document.addEventListener('DOMContentLoaded', (event) => {
-        const forwardVideo = document.getElementById('background-video');
-        const reversedVideo = document.getElementById('background-video-reverse');
-
-        forwardVideo.addEventListener('ended', () => {
-            forwardVideo.style.display = 'none';
-            reversedVideo.style.display = 'block';
-            reversedVideo.play();
-        });
-
-        reversedVideo.addEventListener('ended', () => {
-            reversedVideo.style.display = 'none';
-            forwardVideo.style.display = 'block';
-            forwardVideo.play();
-        });
-    });
-</script>
-
 </body>
 </html>

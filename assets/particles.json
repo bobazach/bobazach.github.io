@@ -4,11 +4,11 @@
       "value": 100,
       "density": {
         "enable": true,
-        "value_area": 800
+        "value_area": 700
       }
     },
     "color": {
-      "value": "#313131"
+      "value": "#222222"
     },
     "shape": {
       "type": "circle",
@@ -48,7 +48,7 @@
     "line_linked": {
       "enable": true,
       "distance": 150,
-      "color": "#b3b3b3",
+      "color": "#a7a7a7",
       "opacity": 0.4,
       "width": 1
     },
@@ -75,7 +75,7 @@
         "mode": "repulse"
       },
       "onclick": {
-        "enable": true,
+        "enable": false,
         "mode": "push"
       },
       "resize": true
@@ -95,7 +95,7 @@
         "speed": 3
       },
       "repulse": {
-        "distance": 200,
+        "distance": 150,
         "duration": 0.4
       },
       "push": {
